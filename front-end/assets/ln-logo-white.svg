@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600">
+<title>LUMINOUS NARRATIVE Logo Vector</title>
+<desc>Editable text SVG. Font may require replacement. The mark represents amplified light and storytelling projection.</desc>
+
+<g id="logo-full">
+<g id="icon-amplified-light">
+<rect x="135.0" y="244.0" width="5.0" height="112.0" fill="#FFFFFF"/>
+<rect x="165.0" y="216.0" width="8.0" height="168.0" fill="#FFFFFF"/>
+<rect x="193.0" y="191.0" width="10.0" height="218.0" fill="#FFFFFF"/>
+<rect x="219.0" y="206.0" width="13.0" height="188.0" fill="#FFFFFF"/>
+<rect x="243.0" y="224.0" width="16.0" height="152.0" fill="#FFFFFF"/>
+<rect x="265.0" y="241.0" width="19.0" height="118.0" fill="#FFFFFF"/>
+<polygon points="328,300 545,190 545,410" fill="#FFFFFF"/>
+</g>
+<g id="wordmark-editable" fill="#FFFFFF" font-family="Montserrat, Avenir Next, Helvetica, Arial, sans-serif" font-weight="500" font-size="65" letter-spacing="32">
+<text x="630" y="270">LUMINOUS</text>
+<text x="630" y="357" letter-spacing="26">NARRATIVE</text>
+</g>
+</g>
+</svg>
