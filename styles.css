@@ -798,9 +798,9 @@ html[data-language="en"] .wordmark__logo {
 .process-list p,
 .contact h2 + p { text-wrap: pretty; }
 .hero__intro { text-wrap: balance; }
-.client-marquee__track { animation: none; width: 100%; }
-.client-list { flex-wrap: wrap; justify-content: center; width: 100%; }
-.client-list li { white-space: normal; }
+.client-marquee__track { display: flex; width: max-content; animation: client-scroll 42s linear infinite; }
+.client-list { display: flex; flex-wrap: nowrap; width: max-content; }
+.client-list li { white-space: nowrap; }
 
 @media (min-width: 761px) and (max-width: 1100px) {
   html[lang="en"] .section-heading h2,

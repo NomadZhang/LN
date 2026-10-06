@@ -225,6 +225,17 @@
     }
   };
 
+  const initClientMarquee = () => {
+    document.querySelectorAll('.client-marquee__track').forEach((track) => {
+      const source = track.querySelector('.client-list');
+      if (!source || track.querySelector('.client-list[aria-hidden="true"]')) return;
+
+      const duplicate = source.cloneNode(true);
+      duplicate.setAttribute('aria-hidden', 'true');
+      track.appendChild(duplicate);
+    });
+  };
+
   const initContact = () => {
     const contactSelectors = ['[data-contact-cta]', '.contact-cta', 'a[href="#contact"]', 'a[href="#联系"]'];
     all(contactSelectors).forEach((cta) => cta.addEventListener('click', (event) => {
@@ -253,6 +264,7 @@
     initLanguage();
     initReveal();
     initCurrentNav();
+    initClientMarquee();
     initYear();
     initContact();
   });
