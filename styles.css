@@ -797,6 +797,8 @@ html[data-language="en"] .wordmark__logo {
 .work-card__media img { transition: transform .65s var(--ease), filter .35s var(--ease); }
 .work-card:hover .work-card__media img,
 .work-card:focus-within .work-card__media img { transform: scale(1.035); filter: contrast(1.04); }
+.work-card--accordion:hover .work-card__media img,
+.work-card--accordion:focus-within .work-card__media img { transform: none; }
 .hero__intro,
 .section-heading > div > p,
 .service-item p,
