@@ -795,10 +795,16 @@ html[data-language="en"] .wordmark__logo {
 .hero__visual .media-placeholder__frame img,
 .work-card__media img { width: 100%; height: 100%; object-fit: cover; }
 .work-card__media img { transition: transform .65s var(--ease), filter .35s var(--ease); }
-.work-card:hover .work-card__media img,
-.work-card:focus-within .work-card__media img { transform: scale(1.035); filter: contrast(1.04); }
-.work-card--accordion:hover .work-card__media img,
-.work-card--accordion:focus-within .work-card__media img { transform: none; }
+.work-card--top:hover .work-card__media img,
+.work-card--top:focus-within .work-card__media img { transform: scale(1.035); filter: contrast(1.04); }
+.work-accordion .work-card--accordion { flex: 1 1 0; min-width: 0; transform: none; }
+.work-accordion .work-card--accordion:hover,
+.work-accordion .work-card--accordion:focus-within { flex: 2.2 1 0; transform: none; }
+.work-accordion .work-card--accordion .work-card__media img,
+.work-accordion .work-card--accordion:hover .work-card__media img,
+.work-accordion .work-card--accordion:focus-within .work-card__media img {
+  transform: none !important;
+}
 .hero__intro,
 .section-heading > div > p,
 .service-item p,
