@@ -791,6 +791,12 @@ html[data-language="en"] .wordmark__logo {
 .lang-title--fixed { display: block; }
 .hero h1 .lang-title--fixed { line-height: 1.02; }
 .hero h1 em { letter-spacing: -.04em; }
+.hero__visual .media-placeholder__frame { position: relative; overflow: hidden; }
+.hero__visual .media-placeholder__frame img,
+.work-card__media img { width: 100%; height: 100%; object-fit: cover; }
+.work-card__media img { transition: transform .65s var(--ease), filter .35s var(--ease); }
+.work-card:hover .work-card__media img,
+.work-card:focus-within .work-card__media img { transform: scale(1.035); filter: contrast(1.04); }
 .hero__intro,
 .section-heading > div > p,
 .service-item p,

@@ -43,10 +43,9 @@
 
   const pageTranslations = {
     '.skip-link': { zh: '跳转至主要内容', en: 'Skip to content' },
-    '.hero__visual figcaption': { zh: '主视觉｜待提供真实案例素材', en: 'Hero visual | Real case-study asset to be provided' },
+    '.hero__visual figcaption': { zh: '主视觉｜主页照片<br /><span>Homepage image</span>', en: 'Hero visual | Homepage image' },
     '#work-title': { zh: '让作品先<br />说话', en: 'Let the work<br />speak' },
     '#work .section-heading > div > p': { zh: '从策略、影像到内容表达，我们把想法整理成清晰、有质感、可被记住的作品。', en: 'From strategy and film to content expression, we shape ideas into clear, considered work people remember.' },
-    '.work-card__media': { zh: '待提供真实案例素材', en: 'Real case-study asset to be provided' },
     '.work-grid .work-card:nth-child(1) .work-card__meta h3': { zh: '社交媒体内容', en: 'Social media content' },
     '.work-grid .work-card:nth-child(1) .work-card__meta p': { zh: '日常内容 / 视觉表达', en: 'Everyday content / Visual expression' },
     '.work-grid .work-card:nth-child(2) .work-card__meta h3': { zh: '短视频制作', en: 'Short-form video production' },
