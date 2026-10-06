@@ -785,3 +785,41 @@ html[data-language="en"] .wordmark__logo {
   border-radius: 50%;
   object-fit: contain;
 }
+
+/* Second revision: stable editorial wrapping and single client list. */
+:root { --line-light: var(--line); }
+.lang-title--fixed { display: block; }
+.hero h1 .lang-title--fixed { line-height: 1.02; }
+.hero h1 em { letter-spacing: -.04em; }
+.hero__intro,
+.section-heading > div > p,
+.service-item p,
+.experience__copy p,
+.process-list p,
+.contact h2 + p { text-wrap: pretty; }
+.hero__intro { text-wrap: balance; }
+.client-marquee__track { animation: none; width: 100%; }
+.client-list { flex-wrap: wrap; justify-content: center; width: 100%; }
+.client-list li { white-space: normal; }
+
+@media (min-width: 761px) and (max-width: 1100px) {
+  html[lang="en"] .section-heading h2,
+  html[lang="en"] .experience h2,
+  html[lang="en"] .contact h2 {
+    font-size: clamp(2.6rem, 5.25vw, 4.8rem);
+  }
+}
+
+@media (max-width: 760px) {
+  .primary-navigation {
+    z-index: 30;
+    background: var(--ink);
+    mix-blend-mode: normal;
+    box-shadow: 0 .8rem 1.5rem rgba(11, 11, 12, .28);
+  }
+  .hero h1 {
+    max-width: 10ch;
+    font-size: clamp(3.2rem, 16vw, 6rem);
+  }
+  .hero h1 .lang-title--fixed { white-space: normal; }
+}
