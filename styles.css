@@ -874,10 +874,19 @@ html[data-language="en"] .experience__copy p {
 
 @media (max-width: 760px) {
   .primary-navigation {
+    inset: calc(100% + .65rem) var(--gutter) auto auto;
+    width: min(13rem, calc(100vw - (2 * var(--gutter))));
     z-index: 30;
+    justify-items: end;
+    padding: 1.15rem 1.2rem 1.3rem;
     background: var(--ink);
     mix-blend-mode: normal;
     box-shadow: 0 .8rem 1.5rem rgba(11, 11, 12, .28);
+    text-align: right;
+  }
+  .primary-navigation .language-switcher {
+    justify-content: flex-end;
+    margin-left: 0;
   }
   .hero h1 {
     max-width: 10ch;
