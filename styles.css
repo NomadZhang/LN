@@ -829,6 +829,10 @@ html[data-language="en"] .wordmark__logo {
 .process-list p,
 .contact h2 + p { text-wrap: pretty; }
 .hero__intro { text-wrap: balance; }
+.hero__intro-copy { display: block; }
+.hero__intro-copy--en { display: none; }
+html[data-language="en"] .hero__intro-copy--zh { display: none; }
+html[data-language="en"] .hero__intro-copy--en { display: block; }
 .client-marquee__track { display: flex; width: max-content; animation: client-scroll 42s linear infinite; }
 .client-list { display: flex; flex-wrap: nowrap; width: max-content; }
 .client-list li { white-space: nowrap; }
