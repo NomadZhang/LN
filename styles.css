@@ -267,9 +267,8 @@ html[data-language="en"] .lang-title--en { display: block; }
   .site-header { display: block; padding-top: 1rem; }
   .site-header__inner { width: 100%; }
   .wordmark__name { display: none; }
-  .primary-navigation { position: absolute; inset: 100% var(--gutter) auto; display: none; padding: 1.25rem 0 1.5rem; color: var(--ivory); background: var(--ink); }
-  .primary-navigation.is-open { display: grid; gap: 1rem; }
-  .menu-toggle { display: inline-flex; align-items: center; gap: .65rem; }
+  .primary-navigation { position: absolute; inset: auto var(--page-gutter) auto; top: calc(100% + .65rem); display: flex; align-items: center; justify-content: flex-start; gap: clamp(.7rem, 2vw, 1.25rem); padding: 0; color: var(--ivory); background: transparent; }
+  .menu-toggle { display: none; }
   .hero__layout, .experience__layout, .contact__layout { grid-template-columns: 1fr; }
   .hero__visual { min-height: 52svh; }
   .hero__scroll-hint { display: none; }
@@ -873,19 +872,35 @@ html[data-language="en"] .experience__copy p {
 }
 
 @media (max-width: 760px) {
+  .site-header { mix-blend-mode: normal; }
+  .hero__copy { top: clamp(3.5rem, 14vw, 5rem); }
+  .section-heading--split {
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+  }
+  .section-heading--split > .eyebrow { margin: 0; }
+  .section-heading--split > div { width: 100%; }
+  .section-heading--split h2 { max-width: none; }
+  html[lang="en"] #services-title,
+  html[lang="en"] #process-title {
+    font-size: clamp(2.4rem, 10vw, 4.5rem);
+    white-space: nowrap;
+  }
   .primary-navigation {
-    inset: calc(100% + .65rem) var(--gutter) auto auto;
-    width: min(13rem, calc(100vw - (2 * var(--gutter))));
+    inset: auto var(--page-gutter) auto;
+    top: calc(100% + 1.45rem);
     z-index: 30;
-    justify-items: end;
-    padding: 1.15rem 1.2rem 1.3rem;
-    background: var(--ink);
-    mix-blend-mode: normal;
-    box-shadow: 0 .8rem 1.5rem rgba(11, 11, 12, .28);
-    text-align: right;
+    width: calc(100% - (2 * var(--page-gutter)));
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    text-align: left;
+    justify-content: space-between;
+    gap: .5rem;
   }
   .primary-navigation .language-switcher {
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-left: 0;
   }
   .hero h1 {
