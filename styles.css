@@ -842,6 +842,27 @@ html[data-language="en"] .experience__copy p {
 .client-marquee__track { display: flex; width: max-content; animation: client-scroll 42s linear infinite; }
 .client-list { display: flex; flex-wrap: nowrap; width: max-content; }
 .client-list li { white-space: nowrap; }
+.client-list li::after {
+  display: inline-block;
+  width: .34rem;
+  height: .34rem;
+  margin-left: 2.4rem;
+  color: var(--warm-gray);
+  border-radius: 50%;
+  background: currentColor;
+  content: "";
+  vertical-align: middle;
+}
+
+/* Safari mobile: keep the media box in control of the image height. */
+.work-card__media {
+  position: relative;
+  overflow: hidden;
+}
+.work-card__media img {
+  position: absolute;
+  inset: 0;
+}
 
 @media (min-width: 761px) and (max-width: 1100px) {
   html[lang="en"] .section-heading h2,
@@ -863,4 +884,9 @@ html[data-language="en"] .experience__copy p {
     font-size: clamp(3.2rem, 16vw, 6rem);
   }
   .hero h1 .lang-title--fixed { white-space: normal; }
+  .client-list li::after {
+    width: .28rem;
+    height: .28rem;
+    margin-left: 1.4rem;
+  }
 }
