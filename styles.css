@@ -833,6 +833,12 @@ html[data-language="en"] .wordmark__logo {
 .hero__intro-copy--en { display: none; }
 html[data-language="en"] .hero__intro-copy--zh { display: none; }
 html[data-language="en"] .hero__intro-copy--en { display: block; }
+html[data-language="en"] .experience__copy {
+  max-width: 42rem;
+}
+html[data-language="en"] .experience__copy p {
+  text-wrap: balance;
+}
 .client-marquee__track { display: flex; width: max-content; animation: client-scroll 42s linear infinite; }
 .client-list { display: flex; flex-wrap: nowrap; width: max-content; }
 .client-list li { white-space: nowrap; }
